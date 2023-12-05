@@ -10,7 +10,7 @@ public class PlayerMovementNM : MonoBehaviour
     public Transform greenZone;
     public NavMeshSurface surface;
 
-    void OnEnable()
+    void Start()
     {
         greenZone = FindAnyObjectByType<Finish>().transform;
         surface = FindAnyObjectByType<NavMeshSurface>();
